@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDT Awareness - Reviews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>DDT Awareness</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="problem.html">Our Problem Statement</a></li>
+                    <li><a href="solution.html">Solutions</a></li>
+                    <li><a href="forum.html" class="active">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="reviews">
+            <h2>Community Reviews</h2>
+            <p>Share your feedback, ideas, and thoughts on the proposed solutions to tackle DDT contamination.</p>
+
+            <form id="review-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <label for="message">Your Review:</label>
+                <textarea id="message" placeholder="Write your thoughts here..." required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+
+            <h3>All Reviews:</h3>
+            <div id="review-list">
+                <!-- Reviews will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DDT Awareness Initiative</p>
+    </footer>
+
+    <!-- Firebase -->
+    <script type="module" src="review.js"></script>
+</body>
+</html>
+
